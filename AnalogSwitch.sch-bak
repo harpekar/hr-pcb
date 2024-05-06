@@ -1,0 +1,411 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2900 4050 0    50   Input ~ 0
+BG_ENABLE
+Text HLabel 2900 3550 0    50   Input ~ 0
+GREEN_ENABLE
+Text HLabel 2900 2950 0    50   Input ~ 0
+IR_ENABLE
+Text HLabel 2900 2300 0    50   Input ~ 0
+RED_ENABLE
+Text HLabel 2950 1400 0    50   Input ~ 0
+PHOTO_SIGNAL
+$Comp
+L Device:C C3
+U 1 1 60C34B37
+P 4350 4700
+F 0 "C3" H 4465 4746 50  0000 L CNN
+F 1 "100nF" H 4465 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4388 4550 50  0001 C CNN
+F 3 "~" H 4350 4700 50  0001 C CNN
+	1    4350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60C35702
+P 5100 4150
+F 0 "C4" H 5215 4196 50  0000 L CNN
+F 1 "10nF" H 5215 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5138 4000 50  0001 C CNN
+F 3 "~" H 5100 4150 50  0001 C CNN
+	1    5100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60C35AC5
+P 5650 3550
+F 0 "C5" H 5765 3596 50  0000 L CNN
+F 1 "10nF" H 5765 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 3400 50  0001 C CNN
+F 3 "~" H 5650 3550 50  0001 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60C35E78
+P 6150 2950
+F 0 "C6" H 6265 2996 50  0000 L CNN
+F 1 "10nF" H 6265 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6188 2800 50  0001 C CNN
+F 3 "~" H 6150 2950 50  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 1400
+Wire Wire Line
+	2900 4050 3450 4050
+Wire Wire Line
+	2900 3550 4100 3550
+Wire Wire Line
+	2900 2950 4550 2950
+Wire Wire Line
+	5150 2300 2900 2300
+Wire Wire Line
+	5650 3400 5450 3400
+Wire Wire Line
+	5100 4000 4900 4000
+Wire Wire Line
+	4150 4550 4350 4550
+Wire Wire Line
+	6150 2800 5950 2800
+Wire Wire Line
+	4850 3250 4850 3400
+Wire Wire Line
+	4850 3400 5150 3400
+$Comp
+L power:GND #PWR0114
+U 1 1 60C91D28
+P 4350 5000
+F 0 "#PWR0114" H 4350 4750 50  0001 C CNN
+F 1 "GND" H 4355 4827 50  0000 C CNN
+F 2 "" H 4350 5000 50  0001 C CNN
+F 3 "" H 4350 5000 50  0001 C CNN
+	1    4350 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 60C9279F
+P 5100 4450
+F 0 "#PWR0115" H 5100 4200 50  0001 C CNN
+F 1 "GND" H 5105 4277 50  0000 C CNN
+F 2 "" H 5100 4450 50  0001 C CNN
+F 3 "" H 5100 4450 50  0001 C CNN
+	1    5100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 60C92EB7
+P 5650 3850
+F 0 "#PWR0116" H 5650 3600 50  0001 C CNN
+F 1 "GND" H 5655 3677 50  0000 C CNN
+F 2 "" H 5650 3850 50  0001 C CNN
+F 3 "" H 5650 3850 50  0001 C CNN
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 60C93549
+P 6150 3250
+F 0 "#PWR0117" H 6150 3000 50  0001 C CNN
+F 1 "GND" H 6155 3077 50  0000 C CNN
+F 2 "" H 6150 3250 50  0001 C CNN
+F 3 "" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3250 6150 3100
+Wire Wire Line
+	5650 3850 5650 3700
+Wire Wire Line
+	4350 5000 4350 4850
+Wire Wire Line
+	5100 4450 5100 4300
+Wire Wire Line
+	6900 2350 6150 2350
+Wire Wire Line
+	6150 2350 6150 2800
+Connection ~ 6150 2800
+Wire Wire Line
+	5650 3400 6450 3400
+Wire Wire Line
+	6450 3400 6450 2450
+Wire Wire Line
+	6450 2450 6900 2450
+Connection ~ 5650 3400
+Wire Wire Line
+	5100 4000 6650 4000
+Wire Wire Line
+	6650 4000 6650 2550
+Wire Wire Line
+	6650 2550 6900 2550
+Connection ~ 5100 4000
+Wire Wire Line
+	6900 2650 6900 4550
+Wire Wire Line
+	6900 4550 4350 4550
+Connection ~ 4350 4550
+$Comp
+L Device:R_Pack04_SIP_Split RN1
+U 1 1 60C9E2DE
+P 4000 4550
+F 0 "RN1" V 3793 4550 50  0000 C CNN
+F 1 "100kOhm" V 3884 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 3920 4550 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4000 4550 50  0001 C CNN
+	1    4000 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04_SIP_Split RN1
+U 2 1 60CA0E42
+P 4750 4000
+F 0 "RN1" V 4543 4000 50  0000 C CNN
+F 1 "100kOhm" V 4634 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 4670 4000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4750 4000 50  0001 C CNN
+	2    4750 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04_SIP_Split RN1
+U 3 1 60CA41B6
+P 5300 3400
+F 0 "RN1" V 5093 3400 50  0000 C CNN
+F 1 "100kOhm" V 5184 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 5220 3400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5300 3400 50  0001 C CNN
+	3    5300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04_SIP_Split RN1
+U 4 1 60CA8B17
+P 5800 2800
+F 0 "RN1" V 5593 2800 50  0000 C CNN
+F 1 "100kOhm" V 5684 2800 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 5720 2800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5800 2800 50  0001 C CNN
+	4    5800 2800
+	0    1    1    0   
+$EndComp
+NoConn ~ 8000 2350
+NoConn ~ 8000 2250
+$Comp
+L power:GND #PWR0118
+U 1 1 60CAD85F
+P 8200 2800
+F 0 "#PWR0118" H 8200 2550 50  0001 C CNN
+F 1 "GND" H 8205 2627 50  0000 C CNN
+F 2 "" H 8200 2800 50  0001 C CNN
+F 3 "" H 8200 2800 50  0001 C CNN
+	1    8200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2550 8200 2550
+Wire Wire Line
+	8200 2550 8200 2650
+Wire Wire Line
+	8000 2650 8200 2650
+Connection ~ 8200 2650
+Wire Wire Line
+	8200 2650 8200 2800
+Wire Wire Line
+	6900 4550 6900 5350
+Connection ~ 6900 4550
+Wire Wire Line
+	8000 1750 8450 1750
+Text Notes 6150 4700 0    50   ~ 0
+Background Noise
+Wire Wire Line
+	8450 1750 8450 5150
+$Comp
+L power:VCC #PWR0121
+U 1 1 60B19ECD
+P 6500 1400
+F 0 "#PWR0121" H 6500 1250 50  0001 C CNN
+F 1 "VCC" H 6515 1573 50  0000 C CNN
+F 2 "" H 6500 1400 50  0001 C CNN
+F 3 "" H 6500 1400 50  0001 C CNN
+	1    6500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1650 6900 1650
+Wire Wire Line
+	6900 2150 6500 2150
+Wire Wire Line
+	6500 1400 6500 1650
+Connection ~ 6500 1650
+Wire Wire Line
+	6500 1650 6500 2150
+Text HLabel 6300 1850 0    50   Input ~ 0
+Channel_0
+Text HLabel 6300 1950 0    50   Input ~ 0
+Channel_1
+Wire Wire Line
+	6300 1950 6900 1950
+Wire Wire Line
+	6900 1850 6300 1850
+$Comp
+L MAX4734:MAX4734ETC+ U7
+U 1 1 60B4C58A
+P 6800 1650
+F 0 "U7" H 7450 1915 50  0000 C CNN
+F 1 "MAX4734ETC+" H 7450 1824 50  0000 C CNN
+F 2 "MAX4724:Maxim_Electronics-http__pdfserv.maximintegrated.com_land_patterns_90-0019.PDF-0-0-0" H 6800 2050 50  0001 L CNN
+F 3 "https://upverter.com/datasheet/8d80e90a75abe5aad0d2e2cbe1039e4082981f5a.pdf" H 6800 2150 50  0001 L CNN
+F 4 "IC" H 6800 2250 50  0001 L CNN "category"
+F 5 "IC MULTIPLEXER 4X1 12TQFN" H 6800 2350 50  0001 L CNN "digikey description"
+F 6 "MAX4734ETC+-ND" H 6800 2450 50  0001 L CNN "digikey part number"
+F 7 "yes" H 6800 2550 50  0001 L CNN "lead free"
+F 8 "e505f49c3ed1ecf4" H 6800 2650 50  0001 L CNN "library id"
+F 9 "Maxim Electronics" H 6800 2750 50  0001 L CNN "manufacturer"
+F 10 "700-MAX4734ETC" H 6800 2850 50  0001 L CNN "mouser part number"
+F 11 "QFN-12" H 6800 2950 50  0001 L CNN "package"
+F 12 "yes" H 6800 3050 50  0001 L CNN "rohs"
+F 13 "+85°C" H 6800 3150 50  0001 L CNN "temperature range high"
+F 14 "-40°C" H 6800 3250 50  0001 L CNN "temperature range low"
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2650 4850 1400
+Wire Wire Line
+	5450 2000 5450 1400
+Wire Wire Line
+	4850 1400 5450 1400
+Wire Wire Line
+	5450 2600 5450 2800
+Wire Wire Line
+	5450 2800 5650 2800
+$Comp
+L 4xxx:4016 U6
+U 1 1 60B1498D
+P 5450 2300
+F 0 "U6" V 5496 2172 50  0000 R CNN
+F 1 "4016" V 5405 2172 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5450 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4016b.pdf" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4xxx:4016 U6
+U 2 1 60B310D7
+P 4850 2950
+F 0 "U6" V 4896 2822 50  0000 R CNN
+F 1 "4016" V 4805 2822 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4016b.pdf" H 4850 2950 50  0001 C CNN
+	2    4850 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4xxx:4016 U6
+U 3 1 60B3585B
+P 4400 3550
+F 0 "U6" V 4446 3422 50  0000 R CNN
+F 1 "4016" V 4355 3422 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4400 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4016b.pdf" H 4400 3550 50  0001 C CNN
+	3    4400 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3850 4400 4000
+Wire Wire Line
+	4400 4000 4600 4000
+Wire Wire Line
+	4400 3250 4400 1400
+Connection ~ 4400 1400
+Wire Wire Line
+	4400 1400 4850 1400
+$Comp
+L 4xxx:4016 U6
+U 4 1 60B4728C
+P 3750 4050
+F 0 "U6" V 3796 3922 50  0000 R CNN
+F 1 "4016" V 3705 3922 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3750 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4016b.pdf" H 3750 4050 50  0001 C CNN
+	4    3750 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 4350 3750 4550
+Wire Wire Line
+	3750 4550 3850 4550
+Wire Wire Line
+	3750 3750 3750 1400
+Connection ~ 3750 1400
+Wire Wire Line
+	3750 1400 4400 1400
+Wire Wire Line
+	2950 1400 3750 1400
+$Comp
+L 4xxx:4016 U6
+U 5 1 60B53C1E
+P 1450 6650
+F 0 "U6" H 1680 6696 50  0000 L CNN
+F 1 "4016" H 1680 6605 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1450 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4016b.pdf" H 1450 6650 50  0001 C CNN
+	5    1450 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 60B770C0
+P 1450 7250
+F 0 "#PWR0146" H 1450 7000 50  0001 C CNN
+F 1 "GND" H 1455 7077 50  0000 C CNN
+F 2 "" H 1450 7250 50  0001 C CNN
+F 3 "" H 1450 7250 50  0001 C CNN
+	1    1450 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0147
+U 1 1 60B776E8
+P 1450 6050
+F 0 "#PWR0147" H 1450 5900 50  0001 C CNN
+F 1 "VCC" H 1465 6223 50  0000 C CNN
+F 2 "" H 1450 6050 50  0001 C CNN
+F 3 "" H 1450 6050 50  0001 C CNN
+	1    1450 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 7150 1450 7250
+Wire Wire Line
+	1450 6050 1450 6150
+Text HLabel 7250 5350 2    50   Output ~ 0
+Background
+Wire Wire Line
+	7250 5350 6900 5350
+Text HLabel 8800 5150 2    50   Output ~ 0
+Chosen_Channel
+Wire Wire Line
+	8450 5150 8800 5150
+$EndSCHEMATC

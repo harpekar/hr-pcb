@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 60C12113
+P 4650 3450
+AR Path="/60B7CF15/60C12113" Ref="R?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12113" Ref="R?"  Part="1" 
+AR Path="/60C8E97E/60C12113" Ref="R6"  Part="1" 
+F 0 "R6" V 4443 3450 50  0000 C CNN
+F 1 "7kOhm" V 4534 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3450 50  0001 C CNN
+F 3 "~" H 4650 3450 50  0001 C CNN
+	1    4650 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C12119
+P 4650 2750
+AR Path="/60B7CF15/60C12119" Ref="R?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12119" Ref="R?"  Part="1" 
+AR Path="/60C8E97E/60C12119" Ref="R4"  Part="1" 
+F 0 "R4" V 4443 2750 50  0000 C CNN
+F 1 "1 kOhm" V 4534 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 2750 50  0001 C CNN
+F 3 "~" H 4650 2750 50  0001 C CNN
+	1    4650 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C1211F
+P 4650 3750
+AR Path="/60B7CF15/60C1211F" Ref="R?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C1211F" Ref="R?"  Part="1" 
+AR Path="/60C8E97E/60C1211F" Ref="R7"  Part="1" 
+F 0 "R7" V 4443 3750 50  0000 C CNN
+F 1 "10kOhm" V 4534 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3750 50  0001 C CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+	1    4650 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 4350 4000 4350
+$Comp
+L power:GND #PWR?
+U 1 1 60C12126
+P 5200 4650
+AR Path="/60B7CF15/60C12126" Ref="#PWR?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12126" Ref="#PWR?"  Part="1" 
+AR Path="/60C8E97E/60C12126" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 5200 4400 50  0001 C CNN
+F 1 "GND" H 5205 4477 50  0000 C CNN
+F 2 "" H 5200 4650 50  0001 C CNN
+F 3 "" H 5200 4650 50  0001 C CNN
+	1    5200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4150 5200 4150
+Wire Wire Line
+	5200 4150 5200 4650
+Wire Wire Line
+	7200 4250 6250 4250
+Wire Wire Line
+	4800 2750 5000 2750
+Wire Wire Line
+	5000 2750 5000 2800
+Wire Wire Line
+	5000 2800 5250 2800
+Wire Wire Line
+	5250 2900 5000 2900
+Wire Wire Line
+	5000 2900 5000 3100
+Wire Wire Line
+	5000 3100 4800 3100
+Wire Wire Line
+	5250 3000 5050 3000
+Wire Wire Line
+	5050 3000 5050 3450
+Wire Wire Line
+	5050 3450 4800 3450
+Wire Wire Line
+	5250 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 3750
+Wire Wire Line
+	5150 3750 4800 3750
+Wire Wire Line
+	4000 4350 4000 3750
+Wire Wire Line
+	4000 2750 4500 2750
+Wire Wire Line
+	4500 3100 4000 3100
+Connection ~ 4000 3100
+Wire Wire Line
+	4000 3100 4000 2750
+Wire Wire Line
+	4500 3450 4000 3450
+Connection ~ 4000 3450
+Wire Wire Line
+	4000 3450 4000 3100
+Wire Wire Line
+	4500 3750 4000 3750
+Connection ~ 4000 3750
+Wire Wire Line
+	4000 3750 4000 3450
+$Comp
+L Amplifier_Operational:AD8603 U?
+U 1 1 60C1214A
+P 5950 4250
+AR Path="/60B7CF15/60C1214A" Ref="U?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C1214A" Ref="U?"  Part="1" 
+AR Path="/60C8E97E/60C1214A" Ref="U8"  Part="1" 
+F 0 "U8" H 6294 4296 50  0000 L CNN
+F 1 "AD8603" H 6294 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5950 4250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf" H 5950 4450 50  0001 C CNN
+	1    5950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C12150
+P 5850 4650
+AR Path="/60B7CF15/60C12150" Ref="#PWR?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12150" Ref="#PWR?"  Part="1" 
+AR Path="/60C8E97E/60C12150" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 5850 4400 50  0001 C CNN
+F 1 "GND" H 5855 4477 50  0000 C CNN
+F 2 "" H 5850 4650 50  0001 C CNN
+F 3 "" H 5850 4650 50  0001 C CNN
+	1    5850 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4550 5850 4650
+$Comp
+L power:VCC #PWR?
+U 1 1 60C12157
+P 5850 3850
+AR Path="/60B7CF15/60C12157" Ref="#PWR?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12157" Ref="#PWR?"  Part="1" 
+AR Path="/60C8E97E/60C12157" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 5850 3700 50  0001 C CNN
+F 1 "VCC" H 5865 4023 50  0000 C CNN
+F 2 "" H 5850 3850 50  0001 C CNN
+F 3 "" H 5850 3850 50  0001 C CNN
+	1    5850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3850 5850 3950
+Connection ~ 4000 4350
+Wire Wire Line
+	5250 2600 5100 2600
+Wire Wire Line
+	4950 2400 5250 2400
+Wire Wire Line
+	4950 2300 5250 2300
+Wire Wire Line
+	5100 2100 4650 2100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2600 5100 2100
+Text HLabel 4950 2400 0    50   Input ~ 0
+TIA_1
+Text HLabel 4950 2300 0    50   Input ~ 0
+TIA_0
+Wire Wire Line
+	5250 2100 5100 2100
+Text GLabel 4650 2100 0    50   Output ~ 0
+VCC
+$Comp
+L MAX4734:MAX4734ETC+ U?
+U 1 1 60C12175
+P 5150 2100
+AR Path="/60B7CF15/60C12175" Ref="U?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12175" Ref="U?"  Part="1" 
+AR Path="/60C8E97E/60C12175" Ref="U5"  Part="1" 
+F 0 "U5" H 5800 2365 50  0000 C CNN
+F 1 "MAX4734ETC+" H 5800 2274 50  0000 C CNN
+F 2 "MAX4724:Maxim_Electronics-http__pdfserv.maximintegrated.com_land_patterns_90-0019.PDF-0-0-0" H 5150 2500 50  0001 L CNN
+F 3 "https://upverter.com/datasheet/8d80e90a75abe5aad0d2e2cbe1039e4082981f5a.pdf" H 5150 2600 50  0001 L CNN
+F 4 "IC" H 5150 2700 50  0001 L CNN "category"
+F 5 "IC MULTIPLEXER 4X1 12TQFN" H 5150 2800 50  0001 L CNN "digikey description"
+F 6 "MAX4734ETC+-ND" H 5150 2900 50  0001 L CNN "digikey part number"
+F 7 "yes" H 5150 3000 50  0001 L CNN "lead free"
+F 8 "e505f49c3ed1ecf4" H 5150 3100 50  0001 L CNN "library id"
+F 9 "Maxim Electronics" H 5150 3200 50  0001 L CNN "manufacturer"
+F 10 "700-MAX4734ETC" H 5150 3300 50  0001 L CNN "mouser part number"
+F 11 "QFN-12" H 5150 3400 50  0001 L CNN "package"
+F 12 "yes" H 5150 3500 50  0001 L CNN "rohs"
+F 13 "+85°C" H 5150 3600 50  0001 L CNN "temperature range high"
+F 14 "-40°C" H 5150 3700 50  0001 L CNN "temperature range low"
+	1    5150 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 3100
+Wire Wire Line
+	6500 3100 6500 3300
+Wire Wire Line
+	6500 3100 6350 3100
+Wire Wire Line
+	6500 3000 6500 3100
+Wire Wire Line
+	6350 3000 6500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 60C12180
+P 6500 3300
+AR Path="/60B7CF15/60C12180" Ref="#PWR?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12180" Ref="#PWR?"  Part="1" 
+AR Path="/60C8E97E/60C12180" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 6500 3050 50  0001 C CNN
+F 1 "GND" H 6505 3127 50  0000 C CNN
+F 2 "" H 6500 3300 50  0001 C CNN
+F 3 "" H 6500 3300 50  0001 C CNN
+	1    6500 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 2800
+NoConn ~ 6350 2700
+Wire Wire Line
+	6350 2200 7200 2200
+$Comp
+L Device:R R?
+U 1 1 60C12189
+P 4650 3100
+AR Path="/60B7CF15/60C12189" Ref="R?"  Part="1" 
+AR Path="/60B7CF15/60C0C86A/60C12189" Ref="R?"  Part="1" 
+AR Path="/60C8E97E/60C12189" Ref="R5"  Part="1" 
+F 0 "R5" V 4443 3100 50  0000 C CNN
+F 1 "5kOhm" V 4534 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3100 50  0001 C CNN
+F 3 "~" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	0    1    1    0   
+$EndComp
+Text HLabel 3600 5350 0    50   Input ~ 0
+PD
+Wire Wire Line
+	3600 5350 4000 5350
+Wire Wire Line
+	4000 4350 4000 5350
+Connection ~ 7200 2900
+Wire Wire Line
+	7200 2900 7200 4250
+Wire Wire Line
+	7200 2200 7200 2900
+Text HLabel 8000 2900 2    50   Output ~ 0
+TA_OUT
+Wire Wire Line
+	7200 2900 8000 2900
+$EndSCHEMATC

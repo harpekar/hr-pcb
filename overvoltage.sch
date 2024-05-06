@@ -1,0 +1,173 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS02 U10
+U 1 1 60C28E0F
+P 5550 3800
+F 0 "U10" H 5550 4125 50  0000 C CNN
+F 1 "74LS02" H 5550 4034 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5550 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 5550 3800 50  0001 C CNN
+	1    5550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U10
+U 2 1 60C28E15
+P 5550 4800
+F 0 "U10" H 5550 5125 50  0000 C CNN
+F 1 "74LS02" H 5550 5034 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5550 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 5550 4800 50  0001 C CNN
+	2    5550 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4700 5050 4700
+Wire Wire Line
+	5050 4700 5050 4200
+Wire Wire Line
+	5050 4200 6400 4200
+Wire Wire Line
+	6400 4200 6400 3800
+Wire Wire Line
+	6400 3800 5850 3800
+Wire Wire Line
+	5250 3900 5150 3900
+Wire Wire Line
+	5150 3900 5150 4400
+Wire Wire Line
+	5150 4400 6450 4400
+Wire Wire Line
+	6450 4400 6450 4800
+Wire Wire Line
+	6450 4800 5850 4800
+Wire Wire Line
+	6400 3800 7000 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	5250 3700 4400 3700
+Text HLabel 4800 4900 0    50   Input ~ 0
+Sat_Reset
+Wire Wire Line
+	5250 4900 4800 4900
+$Comp
+L Device:R R8
+U 1 1 60C28E2A
+P 3300 4150
+F 0 "R8" H 3370 4196 50  0000 L CNN
+F 1 "1000" H 3370 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 4150 50  0001 C CNN
+F 3 "~" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60C28E30
+P 3300 4800
+F 0 "R9" H 3370 4846 50  0000 L CNN
+F 1 "4000" H 3370 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 4800 50  0001 C CNN
+F 3 "~" H 3300 4800 50  0001 C CNN
+	1    3300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4300 3300 4450
+Wire Wire Line
+	3800 3800 3600 3800
+Wire Wire Line
+	3600 3800 3600 4450
+Wire Wire Line
+	3600 4450 3300 4450
+Connection ~ 3300 4450
+Wire Wire Line
+	3300 4450 3300 4650
+$Comp
+L power:GND #PWR012
+U 1 1 60C28E3C
+P 3300 5150
+F 0 "#PWR012" H 3300 4900 50  0001 C CNN
+F 1 "GND" H 3305 4977 50  0000 C CNN
+F 2 "" H 3300 5150 50  0001 C CNN
+F 3 "" H 3300 5150 50  0001 C CNN
+	1    3300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 60C28E42
+P 3300 3850
+F 0 "#PWR011" H 3300 3700 50  0001 C CNN
+F 1 "VCC" H 3315 4023 50  0000 C CNN
+F 2 "" H 3300 3850 50  0001 C CNN
+F 3 "" H 3300 3850 50  0001 C CNN
+	1    3300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3850 3300 4000
+Wire Wire Line
+	3300 4950 3300 5150
+Wire Wire Line
+	3800 3600 3200 3600
+$Comp
+L power:GND #PWR014
+U 1 1 60C28E4C
+P 4000 4100
+F 0 "#PWR014" H 4000 3850 50  0001 C CNN
+F 1 "GND" H 4005 3927 50  0000 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4000 4000 4100
+$Comp
+L Comparator:LMV7219M5 U9
+U 1 1 60C28E53
+P 4100 3700
+F 0 "U9" H 4444 3746 50  0000 L CNN
+F 1 "LMV7219M5" H 4444 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4000 3500 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lmv7219.pdf" H 4100 3900 50  0001 C CNN
+	1    4100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR013
+U 1 1 60C29AF3
+P 4000 3150
+F 0 "#PWR013" H 4000 3000 50  0001 C CNN
+F 1 "VCC" H 4015 3323 50  0000 C CNN
+F 2 "" H 4000 3150 50  0001 C CNN
+F 3 "" H 4000 3150 50  0001 C CNN
+	1    4000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 4000 3400
+Text HLabel 7000 3800 2    50   Output ~ 0
+Sat_Detect
+Text HLabel 2800 2800 0    50   Input ~ 0
+PHOTO_SIGNAL
+Wire Wire Line
+	2800 2800 3200 2800
+Wire Wire Line
+	3200 2800 3200 3600
+$EndSCHEMATC

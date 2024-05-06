@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8223ARM-AD8223
+F http://www.analog.com/static/imported-files/data_sheets/AD8223.pdf
+$ENDCMP
+#
+$CMP MAX4734ETC+-MAX4734
+F https://upverter.com/datasheet/8d80e90a75abe5aad0d2e2cbe1039e4082981f5a.pdf
+$ENDCMP
+#
+#End Doc Library

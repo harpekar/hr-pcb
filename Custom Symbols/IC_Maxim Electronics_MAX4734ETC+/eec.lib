@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Maxim Electronics MAX4734ETC+
+#
+DEF MAX4734ETC+ U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "MAX4734ETC+" 0 300 50 H V L CNN 
+F2 "Maxim_Electronics-http__pdfserv.maximintegrated.com_land_patterns_90-0019.PDF-0-0-*" 0 400 50 H I L CNN 
+F3 "https://upverter.com/datasheet/8d80e90a75abe5aad0d2e2cbe1039e4082981f5a.pdf" 0 500 50 H I L CNN 
+F4 "IC" 0 600 50 H I L CNN "category"
+F5 "IC MULTIPLEXER 4X1 12TQFN" 0 700 50 H I L CNN "digikey description"
+F6 "MAX4734ETC+-ND" 0 800 50 H I L CNN "digikey part number"
+F7 "yes" 0 900 50 H I L CNN "lead free"
+F8 "e505f49c3ed1ecf4" 0 1000 50 H I L CNN "library id"
+F9 "Maxim Electronics" 0 1100 50 H I L CNN "manufacturer"
+F10 "700-MAX4734ETC" 0 1200 50 H I L CNN "mouser part number"
+F11 "QFN-12" 0 1300 50 H I L CNN "package"
+F12 "yes" 0 1400 50 H I L CNN "rohs"
+F13 "+85°C" 0 1500 50 H I L CNN "temperature range high"
+F14 "-40°C" 0 1600 50 H I L CNN "temperature range low"
+DRAW
+X NO1 1 100 -700 100 R 40 40 1 1 U 
+X NO2 9 100 -800 100 R 40 40 1 1 U 
+X NO3 3 100 -900 100 R 40 40 1 1 U 
+X NO4 7 100 -1000 100 R 40 40 1 1 U 
+X A0 12 100 -200 100 R 40 40 1 1 U 
+X A1 10 100 -300 100 R 40 40 1 1 U 
+X COM 8 1200 -100 100 L 40 40 1 1 U 
+X EN 4 100 -500 100 R 40 40 1 1 U 
+X V+ 6 100 0 100 R 40 40 1 1 U 
+X NC 5 1200 -600 100 L 40 40 1 1 U 
+X NC 11 1200 -700 100 L 40 40 1 1 U 
+X GND 2 1200 -900 100 L 40 40 1 1 U 
+X GND_PAD 13 1200 -1000 100 L 40 40 1 1 U 
+S 200 100 1100 -1100 1 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library
